@@ -23,6 +23,11 @@ export type EmblaCarouselVueType = [
   Ref<EmblaCarouselType | undefined>
 ]
 
+// Export the types for use in vue without having to install root package
+export type EmblaCarouselType = EmblaCarouselType
+export type EmblaPluginType = EmblaPluginType
+export type EmblaOptionsType = EmblaOptionsType
+
 function emblaCarouselVue(
   options: MaybeRef<EmblaOptionsType> = {},
   plugins: MaybeRef<EmblaPluginType[]> = []
